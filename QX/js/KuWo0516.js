@@ -6,6 +6,7 @@
 #!openUrl = https://napi.ltd
 #!homepage = https://napi.ltd
 #!icon = https://file.napi.ltd/Static/Image/KuWo.png
+#!sourceUrl = https://napi.ltd/script/Worker/KuWo.js
 #!date = 2024-05-16
 #!select = 选择试听音质,至臻音质,无损音质,超品音质
 
