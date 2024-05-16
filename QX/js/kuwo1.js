@@ -6,6 +6,7 @@
 #!openUrl = https://napi.ltd
 #!homepage = https://napi.ltd
 #!icon = https://file.napi.ltd/Static/Image/KuWo.png
+#!oldurl = https://napi.ltd/script/Worker/KuWo_old.js
 #!date = 2024-05-05
 
 
