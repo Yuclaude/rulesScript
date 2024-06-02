@@ -1,0 +1,23 @@
+#流媒体JP
+
+#https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Region/JP.list
+
+user-agent, AbemaTV*, Shawn
+host-suffix, abema.io, Shawn
+host-suffix, abema.tv, Shawn
+host-suffix, ameba.jp, Shawn
+host-suffix, hayabusa.io, Shawn
+host-keyword, abematv.akamaized.net, Shawn
+host-suffix, dmm.co.jp, Shawn
+host-suffix, dmm.com, Shawn
+host-suffix, dmm-extension.com, Shawn
+host-suffix, happyon.jp, Shawn
+host-suffix, hjholdings.jp, Shawn
+host-suffix, hulu.jp, Shawn
+user-agent, Niconico*, Shawn
+host-suffix, dmc.nico, Shawn
+host-suffix, nicovideo.jp, Shawn
+host-suffix, nimg.jp, Shawn
+user-agent, TVer-Release*, Shawn
+host-suffix, tver.jp, Shawn
+host, edge.api.brightcove.com, Shawn
