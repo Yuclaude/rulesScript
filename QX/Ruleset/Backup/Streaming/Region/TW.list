@@ -1,0 +1,22 @@
+#流媒体TW
+
+#https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Region/TW.list
+
+user-agent, Anime*, Shawn
+host-suffix, bahamut.com.tw, Shawn
+host-suffix, gamer.com.tw, Shawn
+host, gamer-cds.cdn.hinet.net, Shawn
+host, gamer2-cds.cdn.hinet.net, Shawn
+user-agent, KKTV*, Shawn
+user-agent, com.kktv.ios.kktv*, Shawn
+host-suffix, kktv.com.tw, Shawn
+host-suffix, kktv.me, Shawn
+host, kktv-theater.kk.stream, Shawn
+user-agent, LINE%20TV*, Shawn
+host-suffix, linetv.tw, Shawn
+host, d3c7rimkq79yfu.cloudfront.net, Shawn
+host-suffix, litv.tv, Shawn
+host, litvfreemobile-hichannel.cdn.hinet.net, Shawn
+user-agent, TaiwanGood*, Shawn
+host-suffix, skyking.com.tw, Shawn
+host, hamifans.emome.net, Shawn
