@@ -1,0 +1,31 @@
+#流媒体US
+
+#https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Region/US.list
+
+host, tv.applemusic.com, Shawn
+user-agent, encoreTVB*, Shawn
+host-suffix, encoretvb.com, Shawn
+host, edge.api.brightcove.com, Shawn
+host, bcbolt446c5271-a.akamaihd.net, Shawn
+user-agent, HBO%20NOW*, Shawn
+host-suffix, hbo.com, Shawn
+host-suffix, hbogo.com, Shawn
+host-suffix, hbonow.com, Shawn
+user-agent, HBOMAX*, Shawn
+host-suffix, hbomax.com, Shawn
+host-suffix, hbomaxcdn.com, Shawn
+host-suffix, hulu.com, Shawn
+host-suffix, huluim.com, Shawn
+host-suffix, hulustream.com, Shawn
+user-agent, PPlus*, Shawn
+host-suffix, cbsi.com, Shawn
+host-suffix, cbsaavideo.com, Shawn
+host-suffix, cbsivideo.com, Shawn
+host-suffix, paramountplus.com, Shawn
+host-suffix, pplusstatic.com, Shawn
+host, cbsi.live.ott.irdeto.com, Shawn
+host, cbsplaylistserver.aws.syncbak.com, Shawn
+host, cbsservice.aws.syncbak.com, Shawn
+host, link.theplatform.com, Shawn
+user-agent, PBS*, Shawn
+host-suffix, pbs.org, Shawn
