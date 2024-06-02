@@ -1,1 +1,15 @@
 
+#海外抖音
+
+#https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Streaming/Video/TikTok.list
+
+host-suffix, byteoversea.com, Shawn
+host-suffix, ibytedtos.com, Shawn
+host-suffix, muscdn.com, Shawn
+host-suffix, musical.ly, Shawn
+host-suffix, tiktok.com, Shawn
+host-suffix, tik-tokapi.com, Shawn
+host-suffix, tiktokcdn.com, Shawn
+host-suffix, tiktokv.com, Shawn
+host-suffix, ttwstatic.com, Shawn
+host-keyword, tiktokcdn-, Shawn
