@@ -1,0 +1,16 @@
+#流媒体HK
+
+#https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Region/HK.list
+
+user-agent, mytv*, Shawn
+host-suffix, mytvsuper.com, Shawn
+host-suffix, tvb.com, Shawn
+host-suffix, nowe.com, Shawn
+host-suffix, nowestatic.com, Shawn
+user-agent, Viu*, Shawn
+host-suffix, viu.com, Shawn
+host-suffix, viu.tv, Shawn
+host, api.viu.now.com, Shawn
+host, d1k2us671qcoau.cloudfront.net, Shawn
+host, d2anahhhmp1ffz.cloudfront.net, Shawn
+host, dfp6rglgjqszk.cloudfront.net, Shawn
