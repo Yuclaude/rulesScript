@@ -10,7 +10,7 @@
 
 [rewrite_local]
 
-https://api.revenuecat.com/v1/(receipts|subscribers)/* url script-response-body https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/js/PureLibro.js
+https://api.revenuecat.com/v1/(receipts|subscribers)/* url script-response-body https://raw.githubusercontent.com/Yuclaude/rulesScript/main/QX/js/PureLibro.js
 
 [mitm] 
 
