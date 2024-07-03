@@ -13,8 +13,8 @@
 *******************************
 [rewrite_local]
 # > 帆书-原樊登读书 解锁樊登讲书+课程
-^https?:\/\/.+dushu365.com\/(sns-orchestration-system\/homePage\/api\/v100\/myPage|smart-orch\/program|smart-orch\/course\/v100\/info|innovation-orchestration\/api\/ebook\/v100\/ebookInfo) url script-response-body https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/js/FD.js
-^https?:\/\/.+dushu365.com\/resource-orchestration-system\/book\/v101\/content url script-request-body https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/js/FDTK.js
+^https?:\/\/.+dushu365.com\/(sns-orchestration-system\/homePage\/api\/v100\/myPage|smart-orch\/program|smart-orch\/course\/v100\/info|innovation-orchestration\/api\/ebook\/v100\/ebookInfo) url script-response-body https://raw.githubusercontent.com/Yuclaude/rulesScript/main/QX/js/FD.js
+^https?:\/\/.+dushu365.com\/resource-orchestration-system\/book\/v101\/content url script-request-body https://raw.githubusercontent.com/Yuclaude/rulesScript/main/QX/js/FDTK.js
 
 
 [mitm]
