@@ -6,6 +6,7 @@
 更新时间：2023年10月7日 01:22
 问题反馈：https://t.me/ios151
 使用声明：脚本仅供学习与交流，请勿转载与贩卖
+#https://raw.githubusercontent.com/Yu9191/Rewrite/main/wanyuanyuedu.js
 
 *******************************
 
