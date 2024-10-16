@@ -1,5 +1,6 @@
 
 #!url=https://whatshub.top/module/YouTubeAd.sgmodule
+#!https://raw.githubusercontent.com/Maasea/sgmodule/master/YouTube.Enhance.sgmodule
 #!name = YouTube去广告
 
 #!desc =支持pip，后台播放
