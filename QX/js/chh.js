@@ -1,7 +1,7 @@
 /*
 
 创合汇
-会员全课程
+会员全课程https://raw.githubusercontent.com/Yu9191/Rewrite/main/chh.js
 
 [rewrite_local]
 
