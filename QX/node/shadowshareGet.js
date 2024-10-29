@@ -1,5 +1,5 @@
 /*
-https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/node/shadowshareGet.js
+#https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/node/shadowshareGet.js
 
 
 [rewrite_local]
