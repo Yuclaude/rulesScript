@@ -9,12 +9,17 @@ https://gitee.com/api/v5/repos/c0nfigshare/share/contents url script-response-bo
 hostname = gitee.com
 */
 
-
-let obj = JSON.parse($response.body);
+/*let obj = JSON.parse($response.body);
    var objc=obj.content;
 $done({
   body: objc
 });
+*/
 
+ let obj = $response.body
+   var objc=obj.content;
+$done({
+  body: objc
+});
 
 
