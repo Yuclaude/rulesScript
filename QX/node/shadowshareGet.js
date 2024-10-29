@@ -13,7 +13,7 @@ hostname = gitee.com
 let obj = JSON.parse($response.body);
    var objc=obj.content;
 $done({
-  body: JSON.stringify(objc)
+  body: objc
 });
 
 
