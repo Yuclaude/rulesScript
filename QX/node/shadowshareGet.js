@@ -1,4 +1,7 @@
+/*
+https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/node/shadowshareGet.js
 
+*/
 
 
 [MITM]
