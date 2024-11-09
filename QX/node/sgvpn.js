@@ -4,7 +4,7 @@
 
 [rewrite_local]
 
-http:\/\/.*\.api\.baoyun360\.xyz\ url script-response-body https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/node/sgvpn.js
+http:\/\/.*\.baoyun360\.xyz\/* url script-response-body https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/node/sgvpn.js
 
 [mitm]
 
