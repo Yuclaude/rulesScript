@@ -11,8 +11,10 @@
 [rewrite_local]
 ^https?:\/\/d1hzbu30hrhkoe\.cloudfront\.net\/mobile\/verify\/ios url script-response-body https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/js/RainViewer.js
 
+^https?:\/\/mzstorekit\.itunes\.apple\/com url script-response-body https://raw.githubusercontent.com/Yuclaude/rewrite/main/QX/js/RainViewer.js
+
 [mitm]
-hostname = d1hzbu30hrhkoe.cloudfront.net
+hostname = d1hzbu30hrhkoe.cloudfront.net,mzstorekit.itunes.apple.com
 
 *************************************/
 
