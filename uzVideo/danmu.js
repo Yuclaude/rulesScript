@@ -1,5 +1,5 @@
 //@name:弹幕扩展
-//@version:1
+//@version:3
 //@remark:
 //@order: A02
 // ignore
