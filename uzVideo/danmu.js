@@ -87,22 +87,20 @@ async function searchByDocker(item) {
 		var danmuResult = await req(
             `https://zrctyhdlcrvo.ap-northeast-1.clawcloudrun.com/danmu/get?type=json&title=${title}&episode_number=${episode}`
         )
-		if (danmuResult.text?.length > 0){
-		     const dmdata = JSON.parse(danmuResult.text)
-		     let dmnum = dmdata.dmnum
-		     const danmuku = dmdata.danmuku
-		     for (
-			let index = 0;
-                        index < dmnum;
-                        index++
-                        ) {
-                             const element = danmuku[index]
-                             let danMu = new DanMu()
-                             danMu.content = element[4]
-                             danMu.time = element[0]
-                             list.push(danMu)
-                            }
-		}
+		const dmdata = JSON.parse(danmuResult.text)
+		let dmnum = dmdata.dmnum
+		const danmuku = dmdata.danmuku
+		for (
+		    let index = 0;
+                    index < dmnum;
+                    index++
+                    ) {
+                        const element = danmuku[index]
+                        let danMu = new DanMu()
+                        danMu.content = element[4]
+                        danMu.time = element[0]
+                        list.push(danMu)
+                        }
     } catch (error) {}
     return list
 }
