@@ -62,10 +62,11 @@ class BackData {
  */
 async function searchDanMu(item) {
     let backData = new BackData()
+    let ddpList = 0
     try {
         let all = []
         //MARK: - 实现你的弹幕搜索逻辑
-        let ddpList = await searchByDocker(item)
+        ddpList = await searchByDocker(item)
 
         all = all.concat(ddpList)
         backData.data = all
@@ -73,34 +74,34 @@ async function searchDanMu(item) {
         backData.error = error.toString()
     }
     if (backData.data.length == 0) {
-        backData.error = '未找到弹幕'
+        backData.error = '未找到弹幕:' + ddpList
     }
     return formatBackData(backData)
 }
 
 async function searchByDocker(item) {
-    let list = []
+    let list = 0
     try {
-	let title = item.name
-	let episode = item.episode
-		
-	var danmuResult = await req(
-            `https://zrctyhdlcrvo.ap-northeast-1.clawcloudrun.com/danmu/get?type=json&title=${title}&episode_number=${episode}`
-        )
-	const dmdata = JSON.parse(danmuResult.text)
-	let dmnum = dmdata.dmnum
-	const danmuku = dmdata.danmuku
-	for (
+	    let title = item.name
+	    let episode = item.episode
+		var danmuResult = await req(
+			`https://zrctyhdlcrvo.ap-northeast-1.clawcloudrun.com/danmu/get?type=json&title=${title}&episode_number=${episode}`
+		)
+	    const dmdata = JSON.parse(danmuResult.text)
+	    let dmnum = dmdata.dmnum    
+	    const danmuku = dmdata.danmuku
+	    list = dmnum
+	    for (
 		let index = 0;
                 index < dmnum;
                 index++
-        ) {
+             ) {
                 let element = danmuku[index]
                 let danMu = new DanMu()
                 danMu.content = element[4]
                 danMu.time = element[0]
-                list.push(danMu)
-        }
+                //list.push(danMu)
+              }
     } catch (error) {}
     return list
 }
