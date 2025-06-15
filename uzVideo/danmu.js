@@ -88,7 +88,8 @@ async function searchByDocker(item) {
             `https://zrctyhdlcrvo.ap-northeast-1.clawcloudrun.com/danmu/get?type=xml&title=${title}&episode_number${episode}`
         )
 		if (danmuResult.text?.length > 0){
-			list.push(danmuResult.text)
+			let dmdata = JSON.parse(danmuResult.text)
+			list.push(dmdata.danmuku)
 		}
     } catch (error) {}
     return list
