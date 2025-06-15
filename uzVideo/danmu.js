@@ -95,7 +95,7 @@ async function searchByDocker(item) {
                 index < dmnum;
                 index++
         ) {
-                const element = danmuku[index]
+                let element = danmuku[index]
                 let danMu = new DanMu()
                 danMu.content = element[4]
                 danMu.time = element[0]
