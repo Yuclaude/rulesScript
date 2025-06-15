@@ -68,7 +68,7 @@ async function searchDanMu(item) {
         //MARK: - 实现你的弹幕搜索逻辑
         ddpList = await searchByDocker(item)
 
-        all = all.concat(ddpList)
+        //all = all.concat(ddpList)
         backData.data = all
     } catch (error) {
         backData.error = error.toString()
