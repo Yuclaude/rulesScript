@@ -84,8 +84,9 @@ async function searchByDocker(item) {
     try {
 	    let title = item.name
 	    let episode = item.episode
-		var danmuResult = await req(
-			`https://zrctyhdlcrvo.ap-northeast-1.clawcloudrun.com/danmu/get?type=uz&title=${title}&episode_number=${episode}`
+	    let isMovie = item.isMovie ? True : False
+	    var danmuResult = await req(
+			`https://zrctyhdlcrvo.ap-northeast-1.clawcloudrun.com/danmu/get?type=uz&title=${title}&episode_number=${episode}&movie=${isMovie}`
 		)
 	    const dmdata =danmuResult.data
 	    let dmnum = dmdata.length
