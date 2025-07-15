@@ -88,7 +88,7 @@ var danmuLines = []
 
 async function getLines() {
     let error = ''
-    let allLines = await getEnv(appConfig.uzTag, '弹幕线路')
+    let allLines = await getEnv(appConfig.uzTag, '弹幕线路docker')
     let names = []
     if (allLines.length > 0) {
         var userLines = allLines.split(';').map((item) => {
