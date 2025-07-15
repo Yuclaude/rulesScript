@@ -1,6 +1,6 @@
 {
     "name": "弹幕扩展docker1",
-    "version": 3,
+    "version": 4,
     "env": "弹幕线路1##格式 线路名称1@地址1;线路名称2@地址2",
     "order": "A01",
     "api": "https://raw.githubusercontent.com/Yuclaude/rulesScript/refs/heads/master/uzVideo/danmu.js",
