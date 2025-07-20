@@ -151,26 +151,29 @@ async function searchByDocker(args) {
     let list = []
     try {
         let title = args.name
-	      let episode = args.episode
-	      //let movie = item.isMovie ? True : False
-		
-		    // 获取弹幕线路链接
+        let episode = args.episode
+        //let movie = item.isMovie ? True : False 
+        //获取弹幕线路链接
         let line = danmuLines[0].url
         let vdUrl = ''
 		
-		    if (args.videoUrl && args.videoUrl.startsWith('http')) {
-				    vdUrl = args.videoUrl.trim() 
-		    }
+        if (args.videoUrl && args.videoUrl.startsWith('http')) {
+            vdUrl = args.videoUrl.trim() 
+        }
 		
-		    requestUrl = `${line}${title}&episode_number=${episode}&url=${vdUrl}`
+        requestUrl = `${line}${title}&episode_number=${episode}&url=${vdUrl}`
 		
-	      var danmuResult = await req(requestUrl)
-	      const dmdata =danmuResult.data
-	      let dmnum = dmdata.length
+        var danmuResult = await req(requestUrl)
+        if (danmuResult == null) {
+            return list
+        }
+        
+        const dmdata =danmuResult.data
+	    let dmnum = dmdata.length
 	      //const danmuku = dmdata.danmuku
 	      //list = dmnum
-	      for (
-		        let index = 0;
+	    for (
+            let index = 0;
             index < dmnum;
             index++
              ) {
@@ -179,7 +182,7 @@ async function searchByDocker(args) {
                 danMu.content = element[1]
                 danMu.time = element[0]
                 list.push(danMu)
-              }
+            }
     } catch (error) {}
     return list
 }
