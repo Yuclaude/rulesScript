@@ -164,11 +164,12 @@ async function searchByDocker(args) {
         requestUrl = `${line}${title}&episode_number=${episode}&url=${vdUrl}`
 		
         var danmuResult = await req(requestUrl)
-        
-        const dmdata =danmuResult.data
-        if (!dmdata) {
+        if (danmuResult.status != 200) {
             return list 
         }
+        
+        const dmdata =danmuResult.data
+        
 	    let dmnum = dmdata.length
 	      //const danmuku = dmdata.danmuku
 	      //list = dmnum
