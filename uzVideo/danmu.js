@@ -164,7 +164,7 @@ async function searchByDocker(args) {
         requestUrl = `${line}${title}&episode_number=${episode}&url=${vdUrl}`
 		
         var danmuResult = await req(requestUrl)
-        if (danmuResult.status != 200) {
+        if (danmuResult.status >= 400) {
             return list 
         }
         
