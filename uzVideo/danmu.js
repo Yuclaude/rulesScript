@@ -142,7 +142,7 @@ async function searchDanMu(item) {
         backData.error = error.toString()
     }
     if (backData.data.length == 0) {
-        backData.error = '未找到弹幕:'
+        backData.error = backData.error || '未找到弹幕'
     }
     return formatBackData(backData)
 }
@@ -166,7 +166,7 @@ async function searchByDocker(args) {
         var danmuResult = await req(requestUrl)
         
         const dmdata =danmuResult.data
-        if (dmdata == null) {
+        if (!dmdata) {
             return list 
         }
 	    let dmnum = dmdata.length
