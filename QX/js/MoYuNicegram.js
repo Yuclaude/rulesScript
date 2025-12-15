@@ -3,7 +3,7 @@
 > 应用名称：Nicegram
 > 软件版本：1.5.6
 > 脚本作者：ddgksf2013
-> 微信账号：墨鱼手记
+> 微信账号：墨鱼手记https://raw.githubusercontent.com/ddgksf2013/MoYu/master/NicegramProCrack.js
 > 更新时间：2024-02-24
 > 通知频道：https://t.me/ddgksf2021
 > 贡献投稿：https://t.me/ddgksf2013_bot
